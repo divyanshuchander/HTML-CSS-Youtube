@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Suggestion</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serifx;
+        }
+        .suggestion{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 15px;
+            
+            align-items: center;
+        }
+        .individual-profile{
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        }
+       
+        .dp{
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: 0px;
+        }
+        .name{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 0px;
+            margin-top: 4px;
+        }
+        .mutuals{
+            margin-top: 2px;
+            font-size: 15px;
+            color: rgb(123,123,123);
+        }
+        .add-friend{
+            color: white;
+            background-color: rgb(65,103,185);
+            border: none;
+            border-radius: 3px;
+            padding: 8px 10px 8px 10px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .add-friend:hover{
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="suggestion">
+    <div class="individual-profile">
+        <img class="dp" src="profile1.jpeg">
+        <div class="det">
+            <p class="name">
+                John Doe
+            </p>
+            <p class="mutuals">
+                2 Mutual Friends
+            </p>
+            <button class="add-friend">
+                Add Friend
+            </button>
+        </div>
+    </div>
+    <div class="individual-profile">
+        <img class="dp" src="profile2.jpeg">
+        <div class="det">
+            <p class="name">
+                Emma
+            </p>
+            <p class="mutuals">
+                5 Mutual Friends
+            </p>
+            <button class="add-friend">
+                Add Friend
+            </button>
+        </div>
+    </div>
+    <div class="individual-profile">
+        <img class="dp" src="profile3.jpeg">
+        <div class="det">
+            <p class="name">
+                Oprah
+            </p>
+            <p class="mutuals">
+                0 Mutual Friends
+            </p>
+            <button class="add-friend">
+                Add Friend
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
